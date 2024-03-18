@@ -17,12 +17,12 @@ public class SeleniumBase {
     }
 
     public WebDriver seleniumConfig(){
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        options.addArguments("--disable-gpu");
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");
+//        options.addArguments("--disable-gpu");
 
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         driver.manage().window().maximize();
         return driver;

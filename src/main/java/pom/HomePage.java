@@ -6,6 +6,7 @@ import utils.SeleniumActions;
 import utils.SeleniumBase;
 
 import static utils.SeleniumActions.Waits.ELEMENT_TO_BE_CLICKABLE;
+import static utils.SeleniumActions.Waits.VISIBILITY_OF_ELEMENT;
 
 
 public class HomePage extends SeleniumBase {
@@ -13,7 +14,7 @@ public class HomePage extends SeleniumBase {
     Locators locators = new Locators();
 
     public void searchForText(String text){
-        actions.waitUntil(ELEMENT_TO_BE_CLICKABLE,locators.searchTextFld);
+        actions.waitUntil(VISIBILITY_OF_ELEMENT,locators.searchTextFld);
         actions.clear(locators.searchTextFld);
         actions.sendKeys(locators.searchTextFld,text);
         actions.waitUntil(ELEMENT_TO_BE_CLICKABLE,locators.searchBtn);

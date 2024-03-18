@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class Locators {
 
-    public By searchTextFld = By.xpath("//input[@placeholder='Search Wikipedia']");
+    public By searchTextFld = By.cssSelector("form[id='searchform'] input[placeholder='Search Wikipedia']");
     public By searchBtn = By.xpath("//button[text()='Search']");
     public By searchResultTxt = By.cssSelector("h1[id='firstHeading'] span");
     public By loginLinkBtn = By.xpath("//nav[@aria-label='Personal tools']//div[4]//li[2]");
