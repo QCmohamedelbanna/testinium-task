@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Test Cases">
+    <test name="Placing Order and Get Pet Details Cases">
+        <classes>
+            <class name="apiTests.PlacingOrderApiTests"></class>
+            <class name="apiTests.GettingPetDetailsTests"></class>
+        </classes>
+    </test>
+
+</suite>
+
+

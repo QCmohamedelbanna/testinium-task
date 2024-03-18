@@ -1,10 +1,8 @@
-package testCases;
+package uITestCases;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pom.HomePage;
-import pom.LoginPage;
-import utils.SeleniumActions;
 import utils.SeleniumBase;
 
 public class SearchTests {
